@@ -18,7 +18,7 @@ ghc-options:
 - -Wredundant-constraints
 
 library:
-  source-dirs: src
+  source-dirs: src/lib
 
 executables:
   {{name}}-exe:
@@ -36,7 +36,7 @@ import Distribution.Simple
 main = defaultMain
 
 
-{-# START_FILE src/Lib.hs #-}
+{-# START_FILE src/lib/Lib.hs #-}
 module Lib
     ( helloWorld
     ) where
